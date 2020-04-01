@@ -1,2 +1,15 @@
 # changelog
-change log for prototype of top-secret service
+change log for finish line prototype of top-secret service
+
+# update 01.04.20 
+- Создана страница сhangelog
+- Сделан логотип
+- Перерисована часть формы создания объекта
+- Тип формы изменен на multipart
+- Исправлена кодировка в /account. Больше нет кракозябр
+- Изменен один из запросов к схеме базе adresses.adresa. Случайность теперь обеспечена: 
+```sql
+OFFSET floor(random() * 666) 
+``` 
+Нужно изменить множитель, маленькие города могут быть проблемой при таком запросе.
+
